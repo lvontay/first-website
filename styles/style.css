@@ -1,0 +1,33 @@
+html { 
+    background-color: whitesmoke;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+
+}
+ul {
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 1px 1px 1px black;
+}
+
+p {
+    color: black;
+    font-size: 42px;
+}
+
+img {
+    max-height: 591px;
+    width: 591px;
+    display: block;
+    margin: 0 auto;
+}
+ul, p {
+    font-family: Bezar, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
