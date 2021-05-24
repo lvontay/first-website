@@ -1,7 +1,27 @@
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello, world!';
-alert('Hello')
-/* Variable */
-// This is a comment
-let myVariable = 'Lvontay';
-myvariable = 'Steve';
+let myImage = document.querySelector('img');
+
+ myImage.onclick = function() {
+    let mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/logo.png'){
+        myImage.setAttribute('src','images/logo-2.png');
+    } else{
+        myImage.setAttribute('src','images/logo.png');
+    }
+}
+
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+function setUserName() {
+    let myName = prompt('Please enter your name.');
+    localStorage.setItem('name', myName);
+    myHeading.textContent = 'Lukė is cool huh, ' + myName + '?';
+}
+if(!localStorage.getItem('name')) {
+    setUserName();
+} else {
+    let storedName = localStorage.getItem('name');
+    myHeading.textContent = 'Lukė is cool huh,' + storedName + '?';
+}
+myButton.onclick = function() {
+    setUserName();
+}
